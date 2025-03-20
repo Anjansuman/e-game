@@ -13,4 +13,21 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id                Int    @id @default(autoincrement())
+  name              String
+  username          String  @unique
+  email             String  @unique
+  password          String
+  gamertag          String?
+  games             Json?
+  role              String?
+  achievements      Json?
+  experience        Int?
+}
 
+model Team {
+  id        Int     @id @default(autoincrement())
+  name      String
+  date      DateTime  @default(now())
+}

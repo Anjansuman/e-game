@@ -83,6 +83,12 @@ importers:
 
   packages/database:
     dependencies:
+<<<<<<< HEAD
+=======
+      '@prisma/client':
+        specifier: 6.5.0
+        version: 6.5.0(prisma@6.5.0(typescript@5.8.2))(typescript@5.8.2)
+>>>>>>> d3ee0fb2f7d56ea00e2a7f70e1ef417dd16caf1f
       prisma:
         specifier: ^6.5.0
         version: 6.5.0(typescript@5.8.2)
@@ -565,6 +571,21 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
+<<<<<<< HEAD
+=======
+  '@prisma/client@6.5.0':
+    resolution: {integrity: sha512-M6w1Ql/BeiGoZmhMdAZUXHu5sz5HubyVcKukbLs3l0ELcQb8hTUJxtGEChhv4SVJ0QJlwtLnwOLgIRQhpsm9dw==}
+    engines: {node: '>=18.18'}
+    peerDependencies:
+      prisma: '*'
+      typescript: '>=5.1.0'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+      typescript:
+        optional: true
+
+>>>>>>> d3ee0fb2f7d56ea00e2a7f70e1ef417dd16caf1f
   '@prisma/config@6.5.0':
     resolution: {integrity: sha512-sOH/2Go9Zer67DNFLZk6pYOHj+rumSb0VILgltkoxOjYnlLqUpHPAN826vnx8HigqnOCxj9LRhT6U7uLiIIWgw==}
 
@@ -1129,9 +1150,12 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
+<<<<<<< HEAD
   escape-html@1.0.3:
     resolution: {integrity: sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==}
 
+=======
+>>>>>>> d3ee0fb2f7d56ea00e2a7f70e1ef417dd16caf1f
   escape-string-regexp@1.0.5:
     resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
     engines: {node: '>=0.8.0'}
@@ -2762,6 +2786,14 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
+<<<<<<< HEAD
+=======
+  '@prisma/client@6.5.0(prisma@6.5.0(typescript@5.8.2))(typescript@5.8.2)':
+    optionalDependencies:
+      prisma: 6.5.0(typescript@5.8.2)
+      typescript: 5.8.2
+
+>>>>>>> d3ee0fb2f7d56ea00e2a7f70e1ef417dd16caf1f
   '@prisma/config@6.5.0':
     dependencies:
       esbuild: 0.25.1
@@ -3532,8 +3564,11 @@ snapshots:
       '@esbuild/win32-ia32': 0.25.1
       '@esbuild/win32-x64': 0.25.1
 
+<<<<<<< HEAD
   escape-html@1.0.3: {}
 
+=======
+>>>>>>> d3ee0fb2f7d56ea00e2a7f70e1ef417dd16caf1f
   escape-string-regexp@1.0.5: {}
 
   escape-string-regexp@4.0.0: {}
