@@ -1,9 +1,11 @@
-import { Router } from "express";
+import { Router, Request, Response } from "express";
+// @ts-ignore
 import { signinSchema } from "@repo/common/zod";
+import { client } from "@repo/database/client"
 
 const router: Router = Router();
 
-router.post('/', async (req, res) => {
+router.post('/', async (req: Request, res: Response): Promise<void> => {
     try {
 
         const parsedData = signinSchema.safeParse(req.body);
@@ -17,12 +19,19 @@ router.post('/', async (req, res) => {
 
         const { email, password } = parsedData.data;
 
-        //db call
+        const user = await client.user.findUnique({
+            where: {
+                email,
+                password
+            }
+        })
         
         res.status(200).json({
-            message: "Signed-in successfully!"
+            message: "Signed-in successfully!",
+            user
         });
         return;
+        
 
     } catch (error) {
         res.status(500).json({
@@ -31,5 +40,9 @@ router.post('/', async (req, res) => {
         return;
     }
 })
+
+
+
+
 
 export default router;
