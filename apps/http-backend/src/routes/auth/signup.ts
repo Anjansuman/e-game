@@ -1,5 +1,4 @@
 import { Router, Request, Response } from "express";
-// @ts-ignore
 import { signupSchema } from "@repo/common/zod";
 import { client } from "@repo/database/client"
 
